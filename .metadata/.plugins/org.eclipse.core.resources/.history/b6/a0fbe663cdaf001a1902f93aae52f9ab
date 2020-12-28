@@ -1,0 +1,27 @@
+package validation;
+
+public class WalktheTalk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] [] arr = {{3,2},{3,4}};
+		int sum = 0,counter = 0;
+		System.out.println(arr.length);
+				
+			for (int i = 0; i < arr.length-1; i++) {
+				for (int j = 0; j < arr.length-1; j++) {
+					
+					sum = arr[i][j]+arr[i][j+1]+
+							arr[i+1][j]+arr[i+1][j+1];
+					System.out.println("Sum= "+(sum));
+					counter++;
+				}
+				
+			}	
+			System.out.println("Average: "+sum/4);
+			System.out.println(counter);
+		System.out.println(arr[1][1]);
+		
+	}
+}

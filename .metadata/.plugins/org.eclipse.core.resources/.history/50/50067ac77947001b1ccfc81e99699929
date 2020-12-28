@@ -1,0 +1,40 @@
+package com.Selenium_TestNG;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Actions_SwitchTo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\omabh\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://rahulshettyacademy.com/AutomationPractice/");
+	//	driver.findElement(By.linkText("Free Access to InterviewQues/ResumeAssistance/Material")).click();
+		
+		//1. Getting the count of link present on a page
+		
+		System.out.println(driver.findElements(By.tagName("a")).size());
+		
+		
+		//2. Getting the count of link present on the footers. (This concept is based on limiting scoping on the WebElement)
+		
+		
+		WebElement subElement = driver.findElement(By.id("gf-BIG"));
+		
+		System.out.println(subElement.findElements(By.tagName("a")).size() );
+		
+		
+		WebElement subElement1 = driver.findElement(By.xpath("//*[@id='gf-BIG']/table/tbody/tr/td[1]"));
+		
+		System.out.println(subElement1.findElements(By.tagName("a")).size() );
+		
+
+	}
+
+}

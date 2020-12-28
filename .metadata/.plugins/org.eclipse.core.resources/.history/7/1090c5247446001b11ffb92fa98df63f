@@ -1,0 +1,11 @@
+package JSONLint;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.layout.RowSpec;
+
+public class Home extends Jframe {
+
