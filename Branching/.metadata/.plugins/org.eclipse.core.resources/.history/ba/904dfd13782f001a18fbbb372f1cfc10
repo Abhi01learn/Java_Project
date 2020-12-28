@@ -1,0 +1,33 @@
+package validation;
+
+//import org.graalvm.compiler.word.Word;
+
+public class DuplicateCharString {
+	public static void main (String[] args) {
+		String word = "Abhishek";
+		char a=0;
+		char b=0;
+		int counter=0;
+		for (int i = 0; i < word.length(); i++) {
+			a=word.charAt(i);
+			for (int j = 1; j < word.length(); j++) {
+				b= word.charAt(j);
+				if (a==b) {
+					counter++;
+					
+					System.out.println(counter);
+					continue;
+				}
+				else {
+					break;
+				}
+				}
+				
+			}
+			
+		}
+			
+	}
+
+	
+

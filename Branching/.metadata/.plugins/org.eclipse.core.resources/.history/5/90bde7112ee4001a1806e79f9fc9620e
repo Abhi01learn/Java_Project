@@ -1,0 +1,19 @@
+package validation;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+
+public class WalktheTalk {
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 5;
+		int result = num1 % num2++;
+		System.out.println(result);
+}
+		
+	
+
+}

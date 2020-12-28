@@ -1,0 +1,24 @@
+package firstMaven;
+import java.util.ArrayList;
+import java.util.jar.Attributes.Name;
+
+public class AList {
+	public static void main(String[]args) {
+		
+	
+	
+	ArrayList<String> name = new ArrayList<String>();
+	ArrayList details = new ArrayList();
+	
+	name.add("Abhishek");
+	name.add("Lalla");
+	details.add(1);
+	details.add("Abhishek");
+	
+	System.out.println("List elemet :"+name);
+	System.out.println("Details"+details);
+
+		
+	
+	}
+}

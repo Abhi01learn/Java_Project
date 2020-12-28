@@ -1,0 +1,46 @@
+package validation;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+
+
+public class WalktheTalk {
+	public static void main(String[] args) {
+		
+		String inputString = "aaabbhishek";
+		inputString = inputString.toLowerCase();
+
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		
+		int val =0;
+		char [] charArray = inputString.toCharArray();
+		
+		for (int i = 0; i < charArray.length; i++) {	
+			
+			if (map.containsKey(charArray[i])) {
+				val = map.get(charArray[i]);
+				val = val+1;
+				map.put(charArray[i], val);				
+			}
+			else {
+				map.put(charArray[i], 1);
+			}
+			
+			
+		}
+		System.out.println(map);
+	
+
+	}
+
+}

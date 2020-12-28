@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="task" value="Win"/>
+  <parameter name="URL" value="http:\\abhishekpandey.org"/>
+  <parameter name="Name" value="Abhishek Pandey"/>
+  <test parallel="none" name="Test(failed)">
+    <parameter name="task" value="Win"/>
+    <parameter name="URL" value="http:\\abhishekpandey.org"/>
+    <parameter name="Name" value="Abhishek Pandey"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testng_Learn.Learn_TestNG2">
+        <methods>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- com.testng_Learn.Learn_TestNG2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

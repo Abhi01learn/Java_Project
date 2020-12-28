@@ -1,0 +1,2 @@
+// This for loop is for iterating over each element of the 
+																	//array and interchanging if greater. -i  if for excluding the last element as its already sorted

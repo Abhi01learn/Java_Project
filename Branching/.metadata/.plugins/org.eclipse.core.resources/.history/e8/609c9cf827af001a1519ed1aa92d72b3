@@ -1,0 +1,24 @@
+package validation;
+
+
+
+public class WalktheTalk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String inputString = "My cute is best";
+		String word = "is";
+		boolean contains = false;
+		if (inputString.contains(word)) {
+			contains = true;
+
+		}
+		if (contains==true) {
+			System.out.println("'"+word+"'"+" is present in "+inputString);
+		}
+		else {
+			System.out.println("'"+word+"'"+" is NOT present in "+inputString);
+		}
+	}
+
+}

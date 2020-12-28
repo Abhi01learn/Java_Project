@@ -1,0 +1,14 @@
+package firstMaven;
+import java.util.ArrayList;
+import java.util.jar.Attributes.Name;
+
+public class AList {
+	
+	ArrayList<String> name = new ArrayList<String>();
+	
+	name.a
+
+		
+	}
+
+}
